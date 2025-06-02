@@ -1,0 +1,92 @@
+body {
+    background-color: #898C81;
+}
+#navbar {
+    background-color: #163C46;
+}
+.navlink {
+    font-family: sans-serif;
+    font-size: 16;
+    color: #211D1D ;
+    
+}
+.page-title {
+    background-color: #163C46;
+    border-radius: 5px;
+    text-align: center;
+    
+
+}
+#button {
+    background-color: #163C46;
+    color: black ;
+    font-size: 32;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 25px ;
+
+}
+.button {
+    padding-bottom: 20px;
+}
+#content {
+    font-weight: bold;
+    font-size: 36;
+    font-family: sans-serif;
+}
+
+.footer_link {
+    
+    padding-right: 35px;
+
+}
+#contact {
+    padding-bottom: 50px;
+}
+.grid-box {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 800px;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+  }
+
+
+
+
+  /* Dark mode feature using Javascript*/
+
+  body.dark {
+    background-color: #1c1c1c;
+    color: aliceblue;
+  }
+ .theme-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #ddd;
+    color: #000;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 999;
+
+ }
+ body.dark-mode .theme-toggle-btn {
+    background: #444;
+    color: #fff;
+  }
+  body.dark-mode .section {
+    background-color: #333;
+  }
+  
+  body.dark-mode .grid-item {
+    color: #e4e4e4;
+  }

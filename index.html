@@ -4,37 +4,43 @@
         <meta charset="UTF-8">
         <meta lang="en">
         <meta name="viewport" content = "width=device-width initial-scale=1.0" >
-        <link rel="icon" href="logo.png" type="image/x-icon"/>
+        <link rel="icon" href="images/logo.png" type="image/x-icon"/>
+        <link rel="stylesheet" href="main.css">
         <script src="main.js"></script>
         <title>Greenon</title>
     </head>
     <body>
         <header>
             <div id="navbar">
-                <img src="logo.png" alt="logo" width="35px" height="35px">
+                <img src="images/logo.png" alt="logo" width="35px" height="35px">
                 
-                <a href="#home">Home </a>|
-                <a href="#about"> About Us </a>|
-                <a href="#contact"> Contact Us </a>|
-                <a href="#project"> Projects </a>|
-                <a href="#resources"> Resources</a>
-                
+                <a href="#home" class="navlink">Home </a>|
+                <a href="#about" class="navlink"> About Us </a>|
+                <a href="#contact" class="navlink"> Contact Us </a>|
+                <a href="#project" class="navlink"> Projects </a>|
+                <a href="#resources" class="navlink"> Resources</a>
+                <button id="theme" class="theme-button">🌙</button>
+        </header>        
             </div>
           
-                <h1>Powering Tomorrow With Green Biogas Today!</h1>
-                <p>At Greenon Biogas, we believe in a future where energy is clean, affordable, and accessible to everyone. Founded with a mission to revolutionize energy access through innovation in biogas technology, we provide eco-friendly solutions that turn plant and animal waste into powerful sources of renewable energy.</p>
-                <img src="bio_image.jpeg" alt="bio_image.png">
-                <img src="bio_tank.jpeg" alt="biotank_image.png">
-                <div>
-                    <button id="button">Our Solutions</button>
+                <h1>Powering Tomorrow With Green Biogas Today!</h1> </div>
+               <div class="grid-box">
+                <div class="text-section">
+                <p>At Greenon Biogas, we believe in a future where energy is clean, affordable, and accessible to everyone. Founded with a mission to revolutionize energy access through innovation in biogas technology, we provide eco-friendly solutions that turn plant and animal waste into powerful sources of renewable energy.</p></div>
+                <div class="image-section">
+                    <img src="images/bio_image.jpeg" alt="bio_image.png"></div></div>
+                <div class="grid-box">
+                <div claa="image-section"><img src="images/bio_tank.jpeg" alt="biotank_image.png"></div>
+                <div class="text-section">
+                   <div class="button"><button id="button">Our Solutions</button></div> 
+               
+                    <div class="button"><button id="button">Partner with us</button></div>
                 </div>
-                <div>
-                    <button id="button">Partner with us</button>
-                </div>
+            </div>
                 
                 
                 <div id="content">
-                    <h1>About Us</h1>
+                    <h1 class="page-title">About Us</h1>
                     <h2><u>Our Mission</u></h2>
                     <p>At Greenon, we're committed to creating a sustainable future through innovative renewable energy technologies. Founded in 2018, we've been at the forefront of the clean energy revolution, helping businesses and communities transition to sustainable power sources.</p>
                     <h2><u>Our Values</u></h2>
@@ -52,7 +58,7 @@
 
                 </div>
                 <div id="content">
-                    <h2>Frequently Asked Questions</h2>
+                    <h2 class="page-title">Frequently Asked Questions</h2>
                     <h3>Find answers to common questions about biogas energy solutions</h3>
                     <p>How much can I save with biogas energy?</p>
                     <p>What financing options are available?</p>
@@ -60,7 +66,7 @@
                     <p>Are there any harmful effects to the environment?</p>
                 </div>
                 <div id="content">
-                    <h2>Projects</h2>
+                    <h2 class="page-title">Projects</h2>
                     <div class="project">
                         <h3><b>Kiambu Women's Cooperative</b></h3>
                         <p>Installed a 12m³ biogas unit serving over 30 households in a rural women's farming group. The system powers clean cooking and sustainable fertilizer production.</p>
@@ -76,7 +82,8 @@
                     </div>
                 </div>
                 <div id="content">
-                    <h2>Testimonials</h2>
+                    <h2 class="page-title">Testimonials</h2>
+                    <div class="grid-container">
                     <div class="testimonial">
                         <h3>Peter O., Village Elder – Siaya County</h3>
                         <p>“As a community leader, I’ve seen many projects come and go. But Greenon is different. They involve the locals, train us well, and follow up. Now over 20 homes in our village use biogas thanks to their work.”</p>
@@ -89,12 +96,13 @@
                         <h3>Mary N., Mother of Four – Kitui County</h3>
                         <p>“I used to spend hours collecting firewood. With Greenon’s system, I use kitchen and animal waste to cook every day. No smoke, no health problems—and it saves money!”</p>
                     </div>
+                </div>
 
                 </div>
                 <div id="content">
 
-                    <h2>Contact Us</h2>
-                    <form action="/submit">
+                    <h2 class="page-title">Contact Us</h2>
+                    <form action="/submit" id="contact">
                         <div>
                             <label for="fname">Full name</label>
                             <input type="text" id="fname" name="fname" placeholder="Enter Full Name">
@@ -115,8 +123,15 @@
                         </div>
                  </div>
                 </form>
+                <footer id="footer">
+                    <a href="www.instagram.com" class="footer_link"><img src="images/instagram.png" width="50" height="50"> </a>
+                    <a href="www.linkedin.com" class="footer_link"><img src="images/linkedin.png" width="50" height="50"> </a>
+                    <a href="www.github.com" class="footer_link"><img src="images/github.png" width="50" height="50"> </a>
+                    <a href="www.whatsappcom" class="footer_link"><img src="images/whatsapp.png" width="50" height="50"> </a>
+                </footer>
             
-        </header>
+        
         
     </body>
+    <script src="main.js"></script>
 </html>
